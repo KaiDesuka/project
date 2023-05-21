@@ -1,0 +1,82 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Proj</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="uwu.css">
+</head>
+<center><body>
+<div class="container" align="center">
+	<h1>Converter of Units</h1>
+</div>
+<br>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+			<select>
+			<h2>Select Measurement</h2>
+			<option>Select</option>
+			<option>Length</option>	
+			</select>
+			</div>
+			<div class="col-md-12">
+				<h4>Enter Desired Value</h4>
+				<input type="number" id="UwU1" class="form-control" placeholder="MM">
+			</div>
+		</div>
+	</div>
+
+<br>
+<br>
+<div class="container">
+		<br>
+		<div class="col-md-12" align="center" >
+			<div class="containerinp">
+				<input type="number" class="form-control" placeholder="Centimeters" id="tocm">
+				<center>
+				<button onclick="MMCM()">to centimeters</button>
+				</center>
+			</div>
+		<br>
+			<div class="containerinp">
+				<input type="number" class="form-control" placeholder="Meters" id="tom">
+				<center>
+				<button onclick="MMM()">to meters</button>
+				</center>
+			</div>
+		<br>
+			<div class="containerinp">
+				<input type="number" class="form-control" placeholder="Kilometers "id="tokm">
+				<center>
+				<button onclick="MMKM()">to kilometers</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</center>
+<script type="text/javascript">
+function MMCM(){
+	let x = parseInt(document.getElementById('UwU1').value);
+	let y = 10;
+	document.getElementById('tocm').value= (x / y)
+}
+function MMM(){
+	let x = parseInt(document.getElementById('UwU1').value);
+	let y = 1000;
+	document.getElementById('tom').value= (x / y)
+}
+function MMKM(){
+	let x = parseInt(document.getElementById('UwU1').value);
+	let y = 1000000;
+	document.getElementById('tokm').value= (x / y)
+}
+
+</script>
+
+</html>
